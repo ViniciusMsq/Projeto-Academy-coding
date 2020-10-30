@@ -1,0 +1,39 @@
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(3,161,207,1) 0%, rgba(3,59,108,1) 0%, rgba(6,118,167,1) 50%, rgba(3,166,212,1) 100%, rgba(5,25,64,1) 100%, rgba(0,212,255,1) 100%);
+   }
+
+#titulo{
+    display: flex;
+    border-color: black ;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+#pesquisa{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#container{
+    
+    background-color:whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
+
+}
+#container h3{
+
+    margin-left: 1rem;
+}
+#imagem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}

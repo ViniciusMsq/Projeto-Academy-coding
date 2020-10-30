@@ -3,12 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
     <title>Document</title>
     
 </head>
 <body>
-    <Button id="btn">Load API</Button>
-    <input id= "cityName" type="text">
+    <h1 id="titulo">PROJETO ACADEMY CODE</h1>
+    <div id = "pesquisa">
+        <form action="submit">
+            <input type="text" name="" id="cityName">
+            <input type="button" id = "btn"value="Api Load">
+        </form>
+    </div>
+    <div id="container">
+        <hr>
+        <h3 id="cidade">Cidade: </h3>
+        <hr>
+        <h3 id="data">Data: </h3>
+        <hr>
+        <h3 id="temp">Temperatura: </h3>
+        <hr>
+        <h3 id="humidade">Humidade: </h3>
+        <hr>
+        <h3 id="descricao">descrição:</h3>
+        <hr>
+        <div id="imagem"></div>
+    </div>
     <script src="scripts.js"></script>
 </body>
 </html>
