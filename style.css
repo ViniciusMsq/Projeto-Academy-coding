@@ -11,29 +11,32 @@ body {
     padding: 2rem;
 }
 #pesquisa{
-    margin-top: 5rem;
+    margin-top: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
     
 }
-#container{
-    
+#principal{
+    width: 500px;
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     background-color:whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 2rem;
-    margin-right: 10rem;
-    margin-left: 10rem;
+    margin-top: 1rem;
+    margin-right: 30rem;
+    margin-left: 30rem;
 
 }
-#container h3{
-
+#principal h3{
     margin-left: 1rem;
 }
 #imagem{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+    margin-left: 9.8rem;
+    margin-bottom: 2rem;
+    width: 100px;
+    height: 100px;
     
 }

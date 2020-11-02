@@ -11,6 +11,13 @@ let humid = document.getElementById("humidade");
 let desc = document.getElementById("descricao");
 
 btn.addEventListener("click", function(){
+    cidade.innerText="Cidade:  ";
+    data.innerText="Data:  ";
+    temp.innerText="Temperatura:  ";
+    humid.innerText="Humidade:  ";
+    desc.innerText="Descrição:  ";
+
+
     cityName = document.querySelector("#cityName");
     console.log(cityName.value)
     
@@ -26,8 +33,9 @@ btn.addEventListener("click", function(){
         temp.innerText+="  Max: " + obj['results']['forecast'][0]['max']+"°" + "- Min: " + obj['results']['forecast'][0]['min']+"°";
         humid.innerText+="  "+ obj['results']['humidity']+"%";
         desc.innerText+="  "+ obj['results']['description'];
-        
-        img.src="https://assets.hgbrasil.com/weather/images/28n.png";
+        var codigo = obj['results']['img_id'];
+        console.log(codigo);
+        img.src="https://assets.hgbrasil.com/weather/images/"+codigo+".png";
 
         document.getElementById("imagem").appendChild(img);
 
