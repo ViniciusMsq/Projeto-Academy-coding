@@ -9,6 +9,10 @@ let data = document.getElementById("data");
 let temp = document.getElementById("temp");
 let humid = document.getElementById("humidade");
 let desc = document.getElementById("descricao");
+let card1 = document.getElementById("primeiroCard");
+let card2 = document.getElementById("segundoCard");
+let card3 = document.getElementById("terceiroCard");
+let card4 = document.getElementById("quartoCard");
 
 btn.addEventListener("click", function(){
     cidade.innerText="Cidade:  ";
@@ -27,7 +31,7 @@ btn.addEventListener("click", function(){
     })
     .then(function(response){
         obj = response;
-
+        console.log(obj);
         cidade.innerText+="  "+ obj['results']['city'];
         data.innerText+="  "+ obj['results']['forecast'][0]['date'];
         temp.innerText+="  Max: " + obj['results']['forecast'][0]['max']+"°" + "- Min: " + obj['results']['forecast'][0]['min']+"°";
@@ -36,11 +40,15 @@ btn.addEventListener("click", function(){
         var codigo = obj['results']['img_id'];
         console.log(codigo);
         img.src="https://assets.hgbrasil.com/weather/images/"+codigo+".png";
-
         document.getElementById("imagem").appendChild(img);
 
+
+        card1.innerText ="Data:  "+ obj['results']['forecast'][1]['date'];
+        card2.innerText ="Data:  "+ obj['results']['forecast'][2]['date'];
+        card3.innerText ="Data:  "+ obj['results']['forecast'][3]['date'];
+        card4.innerText ="Data:  "+ obj['results']['forecast'][4]['date'];
         
-        console.log(obj);
+        
         
     })
 })
