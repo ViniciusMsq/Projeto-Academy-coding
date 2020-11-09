@@ -4,83 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="C:\Users\Vinic\Documents\GitHub\Projeto-Academy-coding\Imagens\LogoPagina.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <title>Academy Clima</title>
     
 </head>
 <body>
     <div id="container">
-        <h1 class="titulo">PROJETO ACADEMY CODE</h1>
+        <h1 id="titulo"><img src="Imagens/logoPagina.png" width="150" height="150">PROJETO ACADEMY CLIMA</h1>
         
         <div id = "pesquisa">
             <form action="submit">
-                <input type="text" name="" id="cityName">
-                <input type="button" id = "btn"value="Api Load">
+                <input type="text" name="" id="cityName" value="Pesquisar">
+                <input type="button" id = "btn"value="Busca">
             </form>
         </div>
-
-        <div id="principal">
-            
+        <div id="caixa">
+            <fieldset>
                 <legend>Informações:</legend>
-                <h3 id="cidade">Cidade: </h3>
-                <hr>
-                <h3 id="data">Data: </h3>
-                <hr>
-                <h3 id="temp">Temperatura: </h3>
-                <hr>
-                <h3 id="humidade">Humidade: </h3>
-                <hr>
-                <h3 id="descricao">Descrição:</h3>
-                <hr>
-                <div id="imagem"></div>
-        </div>
-            <h2 class="titulo">FUTURO</h2>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <h1 id="primeiroCard"></h1>
+                <div id="principal">
+                    <h3 id="cidade">Cidade: </h3>
+                    <hr>
+                    <h3 id="data">Data: </h3>
+                    <hr>
+                    <h3 id="temp">Temperatura: </h3>
+                    <hr>
+                    <h3 id="humidade">Humidade: </h3>
+                    <hr>
+                    <h3 id="descricao">Descrição:</h3>
+                    <hr>
+                    <div id="imagem">
+                        <div id ="img" ></div>
+                    </div>
                 </div>
-                <div class="flip-card-back">
-                    
-                    <p id="textoUm"></p>
-                </div>
-            </div>
+            </fieldset>
         </div>
+
+        <h2 id="subTitulo">FUTURO</h2>
+        
+        <div id="cards">
             
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <h1 id="segundoCard"></h1>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1 id="dataCard1"></h1>
+                        <hr>
+                        <div id="maxCard1">
+                            <h2 id="tempMaxCard1"></h2>
+                            <h2 id="tempMinCard1"></h2>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <br>
+                        <br>
+                        <br>
+                        <h1 id="textoCard1"></h1>
+                    </div>
                 </div>
-                <div class="flip-card-back">
-                   
-                    <p id="textoDois"></p>
+            </div>
+                
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1 id="dataCard2"></h1>
+                        <hr>
+                        <div id="maxCard2">
+                            <h2 id="tempMaxCard2"></h2>
+                            <h2 id="tempMinCard2"></h2>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <br>
+                        <br>
+                        <br>
+                        <h1 id="textoCard2"></h1>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1 id="dataCard3"></h1>
+                        <hr>
+                        <div id="maxCard3">
+                            <h2 id="tempMaxCard3"></h2>
+                            <h2 id="tempMinCard3"></h2>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <br>
+                        <br>
+                        <br>
+                        <h1 id="textoCard3"></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1 id="dataCard4"></h1>
+                        <hr>
+                        <div id="maxCard4">
+                            <h2 id="tempMaxCard4"></h2>
+                            <h2 id="tempMinCard4"></h2>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <br>
+                        <br>
+                        <br>
+                        <h1 id="textoCard4"></h1>
+                    </div>
                 </div>
             </div>
         </div>
-        
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <h1 id="terceiroCard"></h1>
-                </div>
-                <div class="flip-card-back">
-                    
-                    <p id="textoTres"></p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <h1 id="quartoCard"></h1>
-                </div>
-                <div class="flip-card-back">
-                    
-                    <p id="textoQuatro"></p>
-                </div>
-            </div>
-        </div>
+    
     </div>
     <script src="scripts.js"></script>
 </body>

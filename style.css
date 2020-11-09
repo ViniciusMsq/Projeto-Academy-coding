@@ -1,14 +1,30 @@
 body {
     background: rgb(2,0,36);
-    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(3,161,207,1) 0%, rgba(3,59,108,1) 0%, rgba(6,118,167,1) 50%, rgba(3,166,212,1) 100%, rgba(5,25,64,1) 100%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(315deg, rgba(2,0,36,1) 0%, rgba(3,161,207,1) 0%, rgba(3,59,108,1) 0%, rgba(6,118,167,1) 50%, rgba(3,166,212,1) 100%, rgba(5,25,64,1) 100%, rgba(0,212,255,1) 100%);
    }
 
-.titulo{
+#titulo{
+    padding: 0;
+    margin: 0;
     display: flex;
-    border-color: black ;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    font: 600 2.2rem Archivo;
+    color: rgb(18, 18, 26);
+    text-shadow: rgba(53, 52, 52, 0.548) 0.15em 0.05em 0.2em;
+}
+#subTitulo {
+  font: 600 1.8rem Archivo;
+  text-shadow: rgba(53, 52, 52, 0.548) 0.15em 0.05em 0.2em;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid white;
+  border-radius: 5px;
+  background-color: rgba(245, 245, 245, 0.596);
 }
 #cityName{
     display: inline;
@@ -31,13 +47,15 @@ body {
     padding: 0 1.6rem;
 }
 #pesquisa{
-    margin-top: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
-
+#caixa{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
 #principal{
     align-self: center;
     width: 490px;
@@ -47,68 +65,81 @@ body {
     background-color:#f5f5f5;
     font-family: Arial, Helvetica, sans-serif;
     border: 1px solid  #ffffff;
-    margin-top: 1rem;
-    margin-left: 30rem;
-    margin-right: 30rem;
     border-radius: 10px;
 }
 #principal h3{
     margin-left: 1rem;
 }
 #imagem{
-    margin-left: 9.8rem;
-    margin-bottom: 2rem;
-    width: 100px;
-    height: 100px;
-    
+    display: flex;
+    justify-content: center;
+    margin-left: 3rem;
+}
+#img{
+  padding: 0;
+  margin-top: 0;
+  margin-left: 3rem;
+}
+fieldset{
+  border-radius: 10px 30px;
+  border: 5px solid white;
+}
+legend{
+  font-size: 25px;
+  color: white;
+  border-color: black;
+  font-style: italic;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+#cards{
+  display: flex;
+  justify-content: center;
+}
+#tempCard1{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
 }
 .flip-card {
-    margin: 2rem;
-    display: inline-block;
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    border-radius: 5px;
-    border: 1px solid #f5f5f5;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  font-family: 'Roboto', sans-serif;
+  margin: 0.7rem;
+  display: inline-block;
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+  border: 1px solid #f5f5f5;
+  perspective: 1000px;
   }
   
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
-    background-color: rgba(255, 245, 238, 0.836);
-    color: black;
-  }
-  
-  /* Style the back side */
-  .flip-card-back {
-    background-color: rgba(30, 143, 255, 0.219);
-    color: white;
-    transform: rotateY(180deg);
-  }
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
 
-  @media 
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: rgba(255, 245, 238, 0.178);
+  color: black;
+}
+
+.flip-card-back {
+  background-color: rgba(30, 143, 255, 0.219);
+  color: white;
+  transform: rotateY(180deg);
+}
